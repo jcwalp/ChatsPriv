@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #718093;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   background-color: #2f3640;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom-color: #7f8fa6;
+  border-bottom-color: #f5f6fa;
   border-bottom-style: solid;
   border-bottom-width: 5px;
 }
@@ -40,4 +41,9 @@ a.logo{
 a.logo:hover, .header-right a:hover{
   color: #7f8fa6;
   text-decoration: none;
+}
+
+/* Login Modal */
+.login-section {
+  background-color: #f5f6fa;
 }
