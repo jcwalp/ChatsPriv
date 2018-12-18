@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Heading CSS */
+.header {
+  overflow: hidden;
+  background-color: #2f3640;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom-color: #7f8fa6;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+a.logo{
+  float: left;
+  padding-left: .6em;
+  font-size: 32px;
+}
+
+.header-right a{
+  float: right;
+  font-size: 26px;
+  padding-left: 6px;
+  padding-right: 1em;
+}
+
+a.logo:hover, .header-right a:hover{
+  color: #7f8fa6;
+  text-decoration: none;
+}
