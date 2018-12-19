@@ -16,14 +16,16 @@
   <title>ChatPriv</title>
 </head>
 
-<body onload="onLoad();">
+<body>
   <!-- Calling particlesjs -->
   <div id="particles-js"></div>
   <!-- IDEA: landing - can enter a username or can enter anonymously -->
   <!-- IDEA: No real point in a nav bar -->
   <!-- Header -->
   <div class="header" id="top">
-    <a href="#top" class="logo">ChatPriv</a>
+    <a href="#top" class="logo">
+      <img src="logo.PNG" alt="">
+    </a>
     <div class="header-right">
       <a href="https://www.privchats.com" id="nameHere">Login</a>
       <a href="https://www.privchats.con">Chat</a>
@@ -46,7 +48,9 @@
 
   <!-- Modal -->
   <div class="modal" id="id01">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <span onclick="document.getElementById('id01').style.display='none'" class="close">
+      <i class="fa fa-times close-icon" aria-hidden="true"></i>
+    </span>
 
     <!-- Modal Content -->
     <form class="modal-content animated bounceInDown">
@@ -55,7 +59,7 @@
         <img src="logo.PNG" class="logo-modal">
         <p>Chat Name</p>
         <input type="text" placeholder="Enter Username Here" id="username">
-        <button type="submit" class="submit-button" onclick="disp();" href="landing.html">Enter Chat</button>
+        <button type="submit" class="submit-button" onclick="grabUserName();" href="landing.html">Enter Chat</button>
       </div>
 
 

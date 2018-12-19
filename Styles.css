@@ -13,15 +13,17 @@ body {
 .header {
   overflow: hidden;
   background-color: #2f3640;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom-color: #f5f6fa;
   border-bottom-style: solid;
   border-bottom-width: 5px;
   position: relative;
+  opacity: .9;
 }
 
 .header a {
+  display: inline;
   color: white;
   text-align: center;
   vertical-align: middle;
@@ -29,8 +31,7 @@ body {
 
 a.logo {
   float: left;
-  padding-left: .6em;
-  font-size: 32px;
+  margin-left: 6px;
 }
 
 .header-right a {
@@ -38,8 +39,6 @@ a.logo {
   font-size: 26px;
   padding-left: 6px;
   padding-right: 1em;
-  border-right-color: white;
-  border-right-style: solid;
 }
 
 a.logo:hover, .header-right a:hover {
@@ -58,6 +57,7 @@ a.logo:hover, .header-right a:hover {
 
 .login-section button {
   margin-left: 47%;
+  opacity: 1;
   margin-right: auto;
   padding: 1.7em;
   border-radius: 25%;
@@ -79,6 +79,10 @@ h2 {
   margin-left: 1em;
   margin-top: .5em;
   font-size: 40px;
+}
+
+.modal i {
+  color: white;
 }
 
 .modal {
@@ -159,6 +163,7 @@ h2 {
   color: #f5f6fa;
   margin-top: 9em;
   position: relative;
+  opacity: .9;
 }
 
 h3 {
@@ -168,6 +173,7 @@ h3 {
 
 .page-footer p {
   font-size: 14px;
+
 }
 
 /* Particlesjs css  */
