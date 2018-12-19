@@ -16,9 +16,12 @@
   <title>ChatPriv</title>
 </head>
 
-<body>
+<body onload="onLoad();">
+  <!-- Calling particlesjs -->
+  <div id="particles-js"></div>
   <!-- IDEA: landing - can enter a username or can enter anonymously -->
   <!-- IDEA: No real point in a nav bar -->
+  <!-- Header -->
   <div class="header" id="top">
     <a href="#top" class="logo">ChatPriv</a>
     <div class="header-right">
@@ -51,8 +54,8 @@
         <!-- <h2>cP</h2> -->
         <img src="logo.PNG" class="logo-modal">
         <p>Chat Name</p>
-        <input type="text" placeholder="Enter Username Here" id="username" oninput="setName()">
-        <button type="submit" class="submit-button" onclick="buildList()" href="landing.html">Enter Chat</button>
+        <input type="text" placeholder="Enter Username Here" id="username">
+        <button type="submit" class="submit-button" onclick="disp();" href="landing.html">Enter Chat</button>
       </div>
 
 
@@ -73,9 +76,9 @@
       </div>
     </div>
   </footer>
-  <script src="particles.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" type="text/javascript"></script>
   <script type="text/javascript">
-    particlesJS('particles-js', '/particlesjs-config.json', function() {
+    particlesJS.load('particles-js', 'particlesjs-config.json', function() {
       console.log('callback - particles.js config loaded');
     });
   </script>
